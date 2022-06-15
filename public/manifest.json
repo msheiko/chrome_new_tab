@@ -1,0 +1,22 @@
+{
+    "name": "Custom start page",
+    "version": "1.0",
+    "description": "Custom page for /new tab",
+    "manifest_version": 3,
+    "permissions": [
+        "bookmarks"
+      ],
+    "chrome_url_overrides" : {
+        "newtab": "newtab.html"
+    },
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["data.json"],
+            "use_dynamic_url": true
+        }
+        
+    ]
+  }

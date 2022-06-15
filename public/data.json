@@ -1,0 +1,93 @@
+[
+    { 
+        "url": "https://twitter.com/home",
+        "image": "https://pngimg.com/uploads/twitter/twitter_PNG17.png",
+        "title": "Twitter",
+        "home": true
+    },
+    { 
+        "url": "https://www.youtube.com/",
+        "image": "https://images.financialexpress.com/2020/06/Youtube64-620x413.jpg",
+        "title": "Youtube",
+        "home": true
+    },
+    { 
+        "url": "https://www.yaplakal.com/",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Yaplakal_Logo.jpg",
+        "title": "Yaplakal",
+        "home": true
+    },
+    { 
+        "url": "https://translate.google.ru/",
+        "image": "https://root-nation.com/wp-content/uploads/2018/11/Google-Translate-title.jpg",
+        "title": "Google Translate",
+        "home": false
+    },
+    { 
+        "url": "https://www.twitch.tv/directory/following",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Twitch_logo.svg/1280px-Twitch_logo.svg.png",
+        "title": "Twitch",
+        "home": true
+    },
+    { 
+        "url": "https://tech.onliner.by/",
+        "image": "https://sp.onliner.by/wp-content/uploads/2019/03/onliner_logo.png",
+        "title": "Onliner",
+        "home": true
+    },
+    { 
+        "url": "https://habr.com/ru/",
+        "image": "https://alllogos.ru/images/logotip-habrahabr.png",
+        "title": "Habr",
+        "home": false
+        
+    },
+    { 
+        "url": "https://github.com/",
+        "image": "https://pngimg.com/uploads/github/github_PNG15.png",
+        "title": "Github",
+        "home": false
+    },
+    { 
+        "url": "https://developer.mozilla.org/ru/",
+        "image": "https://techrocks.ru/wp-content/uploads/2017/12/mdn.png",
+        "title": "MDN",
+        "home": false
+    },
+    { 
+        "url": "https://www.kufar.by/",
+        "image": "https://theme.zdassets.com/theme_assets/817244/dec7fab16807305e4bf0ed103245263d612c6a4c.JPG",
+        "title": "Kufar",
+        "home": true
+    },
+    { 
+        "url": "https://laravel.com/docs/",
+        "image": "https://cloudurl.ru/wp-content/uploads/2015/06/laravel.png",
+        "title": "Laravel",
+        "home": false
+    },
+    { 
+        "url": "https://mail.google.com/",
+        "image": "https://4.bp.blogspot.com/-XwYVc0LaiWA/Xej49Dn95SI/AAAAAAAA-UY/uBS1hBAlvXwZSdlBVicGftNgnFlmme7cwCLcBGAsYHQ/w1200-h630-p-k-no-nu/gmail.jpg",
+        "title": "Gmail",
+        "home": false
+    },
+    { 
+        "url": "https://www.php.net/manual/ru/",
+        "image": "https://habrastorage.org/webt/ks/ta/wd/kstawdh9qq_e7ocb6wk-izoxqmg.png",
+        "title": "PHP",
+        "home": false
+    },
+    { 
+        "url": "https://doka.guide/",
+        "image": "https://doka.guide/images/covers/og.png",
+        "title": "Doka",
+        "home": false
+    },
+    { 
+        "url": "https://learn.javascript.ru/",
+        "image": "https://learn.javascript.ru/img/site_preview_ru_1200x630.png",
+        "title": "learn.javascript.ru",
+        "home": true
+    }
+]
