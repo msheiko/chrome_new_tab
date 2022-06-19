@@ -4,7 +4,7 @@
       <img :src="site.image" alt="" />
     </div>
     <div class="card-action">
-      <span href="#">{{ site.title }}</span>
+      <span>{{ site.title }}</span>
     </div>
   </a>
 </template>
@@ -13,8 +13,6 @@
 export default {
   props: {
     site: Object,
-  },
-  mounted(){
   }
 };
 </script>
@@ -25,6 +23,7 @@ export default {
   height: 180px;
   overflow: hidden;
   flex: 0 0 22%;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .card-image{
   height: 90%;
@@ -32,8 +31,11 @@ export default {
   justify-content: center;
   align-items: center;
 }
+.box:hover{
+  text-decoration: none;
+}
 .box:hover img{
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: transform 0.3s ease;
 }
 .card-image img{

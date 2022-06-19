@@ -89,5 +89,11 @@
         "image": "https://learn.javascript.ru/img/site_preview_ru_1200x630.png",
         "title": "learn.javascript.ru",
         "home": true
+    },
+    { 
+        "url": "https://vuejs.org/api/",
+        "image": "https://blog.skillfactory.ru/wp-content/uploads/2021/12/logo-vuejs-9686556.png",
+        "title": "Vue",
+        "home": false
     }
 ]

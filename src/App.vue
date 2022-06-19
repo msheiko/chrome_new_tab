@@ -1,6 +1,6 @@
 <template>
   <nav-bar @toggle-mode="changeMode"/>
-  <main class="container">
+  <main class="container is-dark">
     <site-item v-for="(site, index) in sites" :site="site" :key="index" />
   </main>
 </template>
@@ -41,6 +41,7 @@ export default {
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
 main {
   padding-top: 20px;
