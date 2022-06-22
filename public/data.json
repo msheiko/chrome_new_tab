@@ -95,5 +95,11 @@
         "image": "https://blog.skillfactory.ru/wp-content/uploads/2021/12/logo-vuejs-9686556.png",
         "title": "Vue",
         "home": false
+    },
+    { 
+        "url": "https://trello.com/",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Trello-logo-blue.svg/2560px-Trello-logo-blue.svg.png",
+        "title": "Trello",
+        "home": false
     }
 ]
