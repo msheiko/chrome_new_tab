@@ -36,13 +36,6 @@
         "home": true
     },
     { 
-        "url": "https://habr.com/ru/",
-        "image": "https://alllogos.ru/images/logotip-habrahabr.png",
-        "title": "Habr",
-        "home": false
-        
-    },
-    { 
         "url": "https://github.com/",
         "image": "https://pngimg.com/uploads/github/github_PNG15.png",
         "title": "Github",
@@ -100,6 +93,24 @@
         "url": "https://trello.com/",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Trello-logo-blue.svg/2560px-Trello-logo-blue.svg.png",
         "title": "Trello",
+        "home": false
+    },
+    { 
+        "url": "https://api.bellavka.by/",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfeUbFJoR-Aw_5S3yVG2aXAYAVGtQP9pCWuA&usqp=CAU",
+        "title": "API",
+        "home": false
+    },
+    { 
+        "url": "https://bellavka.ru/pro/task/",
+        "image": "https://img.freepik.com/free-vector/bulldozer-logo-design-template-design_264644-51.jpg",
+        "title": "bellavka.ru",
+        "home": false
+    },
+    { 
+        "url": "https://video.bellavka.by/admin/video",
+        "image": "https://cdn.freebiesupply.com/logos/thumbs/2x/tencent-video-logo.png",
+        "title": "video.bellavka.ru",
         "home": false
     }
 ]
