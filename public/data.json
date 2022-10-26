@@ -104,13 +104,13 @@
     { 
         "url": "https://bellavka.ru/pro/task/",
         "image": "https://img.freepik.com/free-vector/bulldozer-logo-design-template-design_264644-51.jpg",
-        "title": "bellavka.ru",
+        "title": "admink old",
         "home": false
     },
     { 
         "url": "https://video.bellavka.by/admin/video",
         "image": "https://cdn.freebiesupply.com/logos/thumbs/2x/tencent-video-logo.png",
-        "title": "video.bellavka.ru",
+        "title": "video server",
         "home": false
     }
 ]
