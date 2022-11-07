@@ -112,5 +112,29 @@
         "image": "https://cdn.freebiesupply.com/logos/thumbs/2x/tencent-video-logo.png",
         "title": "video server",
         "home": false
+    },
+    { 
+        "url": "https://video.bellavka.by/admin/video",
+        "image": "https://gitea.io/images/gitea.png",
+        "title": "dev git",
+        "home": false
+    },
+    { 
+        "url": "https://monro24.ru",
+        "image": "/ru.png",
+        "title": "ru",
+        "home": false
+    },
+    { 
+        "url": "https://monro24.by",
+        "image": "/by.png",
+        "title": "by",
+        "home": false
+    },
+    { 
+        "url": "https://monro24.kz",
+        "image": "/kz.png",
+        "title": "kz",
+        "home": false
     }
 ]
