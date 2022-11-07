@@ -1,38 +1,43 @@
 <template>
-  <nav-bar @toggle-mode="changeMode"/>
-  <main class="container is-dark">
+  <Toggle
+    class="toggle-button"
+    @change="changeMode"
+    v-model="lables.value"
+    v-bind="lables"
+  />
+  <main>
     <site-item v-for="(site, index) in sites" :site="site" :key="index" />
   </main>
 </template>
 
 <script>
-import SiteItem from "@/components/SiteItem";
-import NavBar from "@/components/NavBar";
-import "bulma/css/bulma.min.css";
+import SiteItem from "./SiteItem";
+import "@vueform/toggle/themes/default.css";
+import Toggle from "@vueform/toggle";
+import json from "./data.json";
+
 export default {
   name: "App",
-  components: { SiteItem, NavBar },
+  components: { SiteItem, Toggle },
   data: () => ({
-    mode: localStorage.getItem('mode') === 'true',
-    allSites: [],
+    mode: localStorage.getItem("mode") === "true",
+    allSites: json,
+    lables: {
+      onLabel: "Home",
+      offLabel: "Work",
+      value: localStorage.getItem("mode") === "true",
+    },
   }),
-  methods:{
-    changeMode(mode){
-        this.mode = mode;
+  methods: {
+    changeMode(value) {
+      localStorage.setItem("mode", value);
+      this.mode = value;
     },
   },
-  computed:{
-    sites(){
-        return this.allSites.filter( s=> s.home === this.mode);
-    }
-  },
-  async mounted() {
-    // eslint-disable-next-line
-    const url = chrome.runtime.getURL("data.json");
-    const response = await fetch(url);
-    const sites = await response.json()
-    this.allSites = sites;
-    
+  computed: {
+    sites() {
+      return this.allSites.filter((s) => s.home === this.mode);
+    },
   },
 };
 </script>
@@ -42,12 +47,19 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  background: rgb(167, 167, 167);
 }
 main {
-  padding-top: 20px;
+  padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 10px;
+  justify-content: center;
+  row-gap: 30px;
+  column-gap: 50px;
+}
+.toggle-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 </style>

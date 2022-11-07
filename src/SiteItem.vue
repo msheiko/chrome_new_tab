@@ -13,7 +13,7 @@
 export default {
   props: {
     site: Object,
-  }
+  },
 };
 </script>
 
@@ -23,33 +23,39 @@ export default {
   height: 180px;
   overflow: hidden;
   flex: 0 0 22%;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: 5px;
+  font-family: 'Fira Code', sans-serif;
+  text-decoration: none;
+  font-size: 12px;
+  background: #ffff;
+  color: rgb(65, 65, 65);
+  flex: 0 0 250px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
-.card-image{
+.card-image {
   height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.box:hover{
+.box:hover {
   text-decoration: none;
 }
-.box:hover img{
+.box:hover img {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
-.card-image img{
+.card-image img {
   display: block;
-  height: auto; 
-  width: auto; 
-  max-width: 70%; 
+  height: auto;
+  width: auto;
+  max-width: 70%;
   max-height: 100%;
   transform: scale(1);
 }
 .card-action span {
   display: block;
   text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 </style>
