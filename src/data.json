@@ -136,5 +136,11 @@
         "image": "/img/kz.png",
         "title": "kz",
         "home": false
+    },
+    { 
+        "url": "http://seasonvar.ru/",
+        "image": "http://cdn.bigsv.ru/asset/img/top.logo.ny.png",
+        "title": "seasonvar.ru",
+        "home": true
     }
 ]
