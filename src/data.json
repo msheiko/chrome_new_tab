@@ -1,11 +1,5 @@
 [
     { 
-        "url": "https://twitter.com/home",
-        "image": "https://pngimg.com/uploads/twitter/twitter_PNG17.png",
-        "title": "Twitter",
-        "home": true
-    },
-    { 
         "url": "https://www.youtube.com/",
         "image": "https://images.financialexpress.com/2020/06/Youtube64-620x413.jpg",
         "title": "Youtube",
@@ -22,12 +16,6 @@
         "image": "https://root-nation.com/wp-content/uploads/2018/11/Google-Translate-title.jpg",
         "title": "Google Translate",
         "home": false
-    },
-    { 
-        "url": "https://www.twitch.tv/directory/following",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Twitch_logo.svg/1280px-Twitch_logo.svg.png",
-        "title": "Twitch",
-        "home": true
     },
     { 
         "url": "https://tech.onliner.by/",
