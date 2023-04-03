@@ -130,5 +130,11 @@
         "image": "http://cdn.bigsv.ru/asset/img/top.logo.ny.png",
         "title": "seasonvar.ru",
         "home": true
+    },
+    { 
+        "url": "http://dev.ramonki.by/",
+        "image": "/img/ramonki.svg",
+        "title": "dev ramonki",
+        "home": false
     }
 ]
