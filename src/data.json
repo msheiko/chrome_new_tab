@@ -132,9 +132,21 @@
         "home": true
     },
     { 
-        "url": "http://dev.ramonki.by/",
+        "url": "https://ramonki.by/",
         "image": "/img/ramonki.svg",
-        "title": "dev ramonki",
+        "title": "by",
+        "home": false
+    },
+    { 
+        "url": "https://ramonki.ri/",
+        "image": "/img/ramonki.svg",
+        "title": "ru",
+        "home": false
+    },
+    { 
+        "url": "https://ramonki.kz/",
+        "image": "/img/ramonki.svg",
+        "title": "kz",
         "home": false
     }
 ]
