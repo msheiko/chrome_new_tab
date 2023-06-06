@@ -102,24 +102,6 @@
         "home": false
     },
     { 
-        "url": "https://monro24.ru",
-        "image": "/img/ru.png",
-        "title": "ru",
-        "home": false
-    },
-    { 
-        "url": "https://monro24.by",
-        "image": "/img/by.png",
-        "title": "by",
-        "home": false
-    },
-    { 
-        "url": "https://monro24.kz",
-        "image": "/img/kz.png",
-        "title": "kz",
-        "home": false
-    },
-    { 
         "url": "http://seasonvar.ru/",
         "image": "http://cdn.bigsv.ru/asset/img/top.logo.ny.png",
         "title": "seasonvar.ru",
