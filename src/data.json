@@ -48,12 +48,6 @@
         "home": false
     },
     { 
-        "url": "https://mail.google.com/",
-        "image": "https://4.bp.blogspot.com/-XwYVc0LaiWA/Xej49Dn95SI/AAAAAAAA-UY/uBS1hBAlvXwZSdlBVicGftNgnFlmme7cwCLcBGAsYHQ/w1200-h630-p-k-no-nu/gmail.jpg",
-        "title": "Gmail",
-        "home": false
-    },
-    { 
         "url": "https://www.php.net/manual/ru/",
         "image": "https://habrastorage.org/webt/ks/ta/wd/kstawdh9qq_e7ocb6wk-izoxqmg.png",
         "title": "PHP",
