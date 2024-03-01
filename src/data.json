@@ -18,6 +18,12 @@
         "home": false
     },
     { 
+        "url": "https://www.wildberries.ru",
+        "image": "https://www.sostav.ru/images/news/2023/08/11/0qloksnr.jpg",
+        "title": "Wildberries",
+        "home": true
+    },
+    { 
         "url": "https://tech.onliner.by/",
         "image": "https://sp.onliner.by/wp-content/uploads/2019/03/onliner_logo.png",
         "title": "Onliner",
@@ -42,36 +48,6 @@
         "home": true
     },
     { 
-        "url": "https://laravel.com/docs/",
-        "image": "https://cloudurl.ru/wp-content/uploads/2015/06/laravel.png",
-        "title": "Laravel",
-        "home": false
-    },
-    { 
-        "url": "https://www.php.net/manual/ru/",
-        "image": "https://habrastorage.org/webt/ks/ta/wd/kstawdh9qq_e7ocb6wk-izoxqmg.png",
-        "title": "PHP",
-        "home": false
-    },
-    { 
-        "url": "https://doka.guide/",
-        "image": "https://doka.guide/images/covers/og.png",
-        "title": "Doka",
-        "home": false
-    },
-    { 
-        "url": "https://learn.javascript.ru/",
-        "image": "https://learn.javascript.ru/img/site_preview_ru_1200x630.png",
-        "title": "learn.javascript.ru",
-        "home": true
-    },
-    { 
-        "url": "https://vuejs.org/api/",
-        "image": "https://blog.skillfactory.ru/wp-content/uploads/2021/12/logo-vuejs-9686556.png",
-        "title": "Vue",
-        "home": false
-    },
-    { 
         "url": "https://trello.com/",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Trello-logo-blue.svg/2560px-Trello-logo-blue.svg.png",
         "title": "Trello",
@@ -84,20 +60,8 @@
         "home": false
     },
     { 
-        "url": "https://bellavka.ru/pro/task/",
-        "image": "https://img.freepik.com/free-vector/bulldozer-logo-design-template-design_264644-51.jpg",
-        "title": "admink old",
-        "home": false
-    },
-    { 
-        "url": "https://video.bellavka.by/admin/video",
-        "image": "https://cdn.freebiesupply.com/logos/thumbs/2x/tencent-video-logo.png",
-        "title": "video server",
-        "home": false
-    },
-    { 
-        "url": "https://dev.bellavka.by",
-        "image": "https://gitea.io/images/gitea.png",
+        "url": "https://gitlavka.bellavka.by",
+        "image": "https://images.ctfassets.net/xz1dnu24egyd/4QGmokIyrhHxpfmYIKHq17/ef43a9f88f2a9c1da8f5382383756d46/gitlab-logo-150.jpg",
         "title": "dev git",
         "home": false
     },
