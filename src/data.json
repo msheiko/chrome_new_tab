@@ -47,10 +47,10 @@
         "title": "Kufar",
         "home": true
     },
-    { 
-        "url": "https://trello.com/",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Trello-logo-blue.svg/2560px-Trello-logo-blue.svg.png",
-        "title": "Trello",
+    {
+        "url": "https://prj.bellavka.by/secure/Dashboard.jspa",
+        "image": "https://1000logos.net/wp-content/uploads/2021/05/Atlassian-Logo-2010s1.png",
+        "title": "kz",
         "home": false
     },
     { 
@@ -83,10 +83,34 @@
         "title": "ru",
         "home": false
     },
-    { 
+    {
         "url": "https://ramonki.kz/",
         "image": "/img/ramonki.svg",
         "title": "kz",
+        "home": false
+    },
+    {
+        "url": "https://new.bellavka.by",
+        "image": "https://bellavka.ru/bellavka_logo-redesign.svg",
+        "title": "by",
+        "home": false
+    },
+    {
+        "url": "https://new.bellavka.ru",
+        "image": "https://bellavka.ru/bellavka_logo-redesign.svg",
+        "title": "ru",
+        "home": false
+    },
+    {
+        "url": "https://new.bellavka.kz",
+        "image": "https://bellavka.ru/bellavka_logo-redesign.svg",
+        "title": "kz",
+        "home": false
+    },
+    {
+        "url": "https://chatgpt.com/",
+        "image": "https://www.shutterstock.com/image-vector/abstract-ai-logo-set-sleek-600nw-2590920659.jpg",
+        "title": "ChatGPT",
         "home": false
     }
 ]
