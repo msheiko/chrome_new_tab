@@ -48,9 +48,15 @@
         "home": true
     },
     {
+        "url": "https://argocd.infra.bellavka.by/applications?showFavorites=true&proj=&sync=&autoSync=&health=&namespace=&cluster=&labels=",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6PNrQ8olWcLJKePVmVLJBScdK1vQY4d7QLA&s",
+        "title": "ArgoCD",
+        "home": false
+    },
+    {
         "url": "https://prj.bellavka.by/secure/Dashboard.jspa",
         "image": "https://1000logos.net/wp-content/uploads/2021/05/Atlassian-Logo-2010s1.png",
-        "title": "kz",
+        "title": "JIRA",
         "home": false
     },
     { 
