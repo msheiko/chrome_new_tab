@@ -1,25 +1,25 @@
 [
     { 
         "url": "https://www.youtube.com/",
-        "image": "https://images.financialexpress.com/2020/06/Youtube64-620x413.jpg",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png",
         "title": "Youtube",
         "home": true
     },
     { 
         "url": "https://www.yaplakal.com/",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Yaplakal_Logo.jpg",
+        "image": "https://downradar.ru/img/upload/logo/yaplakal_com.png",
         "title": "Yaplakal",
         "home": true
     },
     { 
         "url": "https://translate.google.ru/",
-        "image": "https://root-nation.com/wp-content/uploads/2018/11/Google-Translate-title.jpg",
+        "image": "https://logos-world.net/wp-content/uploads/2022/05/Google-Translate-Symbol.png",
         "title": "Google Translate",
         "home": false
     },
     { 
         "url": "https://www.wildberries.ru",
-        "image": "https://www.sostav.ru/images/news/2023/08/11/0qloksnr.jpg",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Wildberries_Logo.png",
         "title": "Wildberries",
         "home": true
     },
@@ -43,13 +43,13 @@
     },
     { 
         "url": "https://www.kufar.by/",
-        "image": "https://theme.zdassets.com/theme_assets/817244/dec7fab16807305e4bf0ed103245263d612c6a4c.JPG",
+        "image": "https://content.kufar.by/static/frontend/img/kufar_logo_meta.png",
         "title": "Kufar",
         "home": true
     },
     {
         "url": "https://argocd.infra.bellavka.by/applications?showFavorites=true&proj=&sync=&autoSync=&health=&namespace=&cluster=&labels=",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6PNrQ8olWcLJKePVmVLJBScdK1vQY4d7QLA&s",
+        "image": "https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/1/argo-e1igjrrg4noy4q8rgwtags.png/argo-cqux33sc43kaweudnz4we.png",
         "title": "ArgoCD",
         "home": false
     },
@@ -61,13 +61,13 @@
     },
     { 
         "url": "https://api.bellavka.by/",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfeUbFJoR-Aw_5S3yVG2aXAYAVGtQP9pCWuA&usqp=CAU",
+        "image": "https://cdn-icons-png.flaticon.com/512/906/906343.png",
         "title": "API",
         "home": false
     },
     { 
         "url": "https://gitlavka.bellavka.by",
-        "image": "https://images.ctfassets.net/xz1dnu24egyd/4QGmokIyrhHxpfmYIKHq17/ef43a9f88f2a9c1da8f5382383756d46/gitlab-logo-150.jpg",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/GitLab_logo.svg/1200px-GitLab_logo.svg.png",
         "title": "dev git",
         "home": false
     },
@@ -115,7 +115,7 @@
     },
     {
         "url": "https://chatgpt.com/",
-        "image": "https://www.shutterstock.com/image-vector/abstract-ai-logo-set-sleek-600nw-2590920659.jpg",
+        "image": "https://pngimg.com/d/chatgpt_PNG13.png",
         "title": "ChatGPT",
         "home": false
     }

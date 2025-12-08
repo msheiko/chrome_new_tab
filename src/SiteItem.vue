@@ -50,16 +50,20 @@ const handleImageError = () => {
   flex: 0 0 250px;
   box-shadow: var(--card-shadow, rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px);
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.2s ease;
+  cursor: pointer;
+}
+
+.box:hover {
+  box-shadow: var(--card-shadow, rgba(14, 30, 37, 0.2) 0px 4px 8px 0px,
+    rgba(14, 30, 37, 0.4) 0px 4px 20px 0px);
 }
 .card-image {
   height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.box:hover {
-  text-decoration: none;
 }
 .box:hover img {
   transform: scale(1.05);
@@ -70,7 +74,7 @@ const handleImageError = () => {
   height: auto;
   width: auto;
   max-width: 70%;
-  max-height: 100%;
+  max-height: 70%;
   transform: scale(1);
 }
 .card-action span {

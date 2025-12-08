@@ -6,10 +6,14 @@
     v-bind="labels"
   />
   <main>
-    <div v-if="sites.length === 0" class="empty-state">
-      <p>Нет сайтов в режиме "{{ mode ? 'Home' : 'Work' }}"</p>
-    </div>
-    <site-item v-else v-for="site in sites" :site="site" :key="site.url" />
+    <Transition name="fade" mode="out-in">
+      <div v-if="sites.length === 0" key="empty" class="empty-state">
+        <p>Нет сайтов в режиме "{{ mode ? 'Home' : 'Work' }}"</p>
+      </div>
+      <TransitionGroup v-else name="site-list" tag="div" class="sites-container">
+        <site-item v-for="site in sites" :site="site" :key="site.url" />
+      </TransitionGroup>
+    </Transition>
   </main>
 </template>
 
@@ -68,7 +72,7 @@ const changeMode = (value) => {
     --bg-color: rgb(30, 30, 30);
     --text-color: rgb(220, 220, 220);
     --text-color-secondary: rgb(150, 150, 150);
-    --card-bg: rgb(45, 45, 45);
+    --card-bg: rgb(70, 70, 70);
     --card-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px 0px,
       rgba(0, 0, 0, 0.5) 0px 2px 16px 0px;
   }
@@ -85,6 +89,11 @@ body {
 
 main {
   padding-top: 50px;
+  position: relative;
+  min-height: 200px;
+}
+
+.sites-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -96,6 +105,12 @@ main {
   position: absolute;
   right: 10px;
   top: 10px;
+  transition: transform 0.2s ease;
+  z-index: 10;
+}
+
+.toggle-button:hover {
+  transform: scale(1.05);
 }
 
 .empty-state {
@@ -104,6 +119,41 @@ main {
   padding: 60px 20px;
   color: var(--text-color-secondary);
   font-size: 18px;
+}
+
+/* Анимации переключения */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* Анимации для списка сайтов */
+.site-list-enter-active {
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.site-list-leave-active {
+  transition: all 0.3s ease;
+  position: absolute;
+}
+
+.site-list-enter-from {
+  opacity: 0;
+  transform: scale(0.8) translateY(-20px);
+}
+
+.site-list-leave-to {
+  opacity: 0;
+  transform: scale(0.8) translateY(20px);
+}
+
+.site-list-move {
+  transition: transform 0.4s ease;
 }
 
 @media (max-width: 768px) {
