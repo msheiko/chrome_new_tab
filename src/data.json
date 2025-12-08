@@ -1,4 +1,5 @@
 [
+
     { 
         "url": "https://www.youtube.com/",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png",
@@ -70,6 +71,12 @@
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/GitLab_logo.svg/1200px-GitLab_logo.svg.png",
         "title": "dev git",
         "home": false
+    },
+    { 
+        "url": "https://ozon.by",
+        "image": "https://upload.wikimedia.org/wikipedia/ru/thumb/e/ec/OZON_2019.svg/2560px-OZON_2019.svg.png",
+        "title": "Ozon",
+        "home": true
     },
     { 
         "url": "http://seasonvar.ru/",
