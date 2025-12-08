@@ -1,5 +1,5 @@
 <template>
-  <a class="box" :href="site.url" target="_blank" rel="noopener noreferrer">
+  <a class="box" :href="site.url" rel="noopener noreferrer">
     <div class="card-image">
       <img 
         v-if="!imageError"
