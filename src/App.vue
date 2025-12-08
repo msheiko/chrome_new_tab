@@ -2,43 +2,54 @@
   <Toggle
     class="toggle-button"
     @change="changeMode"
-    v-model="lables.value"
-    v-bind="lables"
+    v-model="mode"
+    v-bind="labels"
   />
   <main>
-    <site-item v-for="(site, index) in sites" :site="site" :key="index" />
+    <div v-if="sites.length === 0" class="empty-state">
+      <p>Нет сайтов в режиме "{{ mode ? 'Home' : 'Work' }}"</p>
+    </div>
+    <site-item v-else v-for="site in sites" :site="site" :key="site.url" />
   </main>
 </template>
 
-<script>
-import SiteItem from "./SiteItem";
+<script setup>
+import { ref, computed } from 'vue';
+import SiteItem from "./SiteItem.vue";
 import "@vueform/toggle/themes/default.css";
 import Toggle from "@vueform/toggle";
 import json from "./data.json";
 
-export default {
-  name: "App",
-  components: { SiteItem, Toggle },
-  data: () => ({
-    mode: localStorage.getItem("mode") === "true",
-    allSites: json,
-    lables: {
-      onLabel: "Home",
-      offLabel: "Work",
-      value: localStorage.getItem("mode") === "true",
-    },
-  }),
-  methods: {
-    changeMode(value) {
-      localStorage.setItem("mode", value);
-      this.mode = value;
-    },
-  },
-  computed: {
-    sites() {
-      return this.allSites.filter((s) => s.home === this.mode);
-    },
-  },
+const getSavedMode = () => {
+  try {
+    return localStorage.getItem("mode") === "true";
+  } catch {
+    return false;
+  }
+};
+
+const savedMode = getSavedMode();
+const mode = ref(savedMode);
+const allSites = ref(json);
+
+const labels = {
+  onLabel: "Home",
+  offLabel: "Work",
+};
+
+const sites = computed(() => {
+  return allSites.value.filter((s) => s.home === mode.value);
+});
+
+const changeMode = (value) => {
+  try {
+    localStorage.setItem("mode", value);
+    mode.value = value;
+  } catch (e) {
+     
+    console.error("Failed to save mode to localStorage:", e);
+    mode.value = value;
+  }
 };
 </script>
 
@@ -61,5 +72,23 @@ main {
   position: absolute;
   right: 10px;
   top: 10px;
+}
+.empty-state {
+  width: 100%;
+  text-align: center;
+  padding: 60px 20px;
+  color: rgb(100, 100, 100);
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  main {
+    padding: 20px 10px;
+    gap: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .box {
+    flex: 0 0 100%;
+  }
 }
 </style>

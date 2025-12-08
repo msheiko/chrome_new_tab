@@ -1,7 +1,16 @@
 <template>
-  <a class="box" :href="site.url">
+  <a class="box" :href="site.url" target="_blank" rel="noopener noreferrer">
     <div class="card-image">
-      <img :src="site.image" alt="" />
+      <img 
+        v-if="!imageError"
+        :src="site.image" 
+        :alt="site.title" 
+        loading="lazy"
+        @error="handleImageError"
+      />
+      <div v-else class="image-placeholder">
+        {{ site.title.charAt(0).toUpperCase() }}
+      </div>
     </div>
     <div class="card-action">
       <span>{{ site.title }}</span>
@@ -9,11 +18,20 @@
   </a>
 </template>
 
-<script>
-export default {
-  props: {
-    site: Object,
+<script setup>
+import { ref } from 'vue';
+
+defineProps({
+  site: {
+    type: Object,
+    required: true,
   },
+});
+
+const imageError = ref(false);
+
+const handleImageError = () => {
+  imageError.value = true;
 };
 </script>
 
@@ -27,7 +45,7 @@ export default {
   font-family: 'Fira Code', sans-serif;
   text-decoration: none;
   font-size: 12px;
-  background: #ffff;
+  background: #ffffff;
   color: rgb(65, 65, 65);
   flex: 0 0 250px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
@@ -57,5 +75,17 @@ export default {
 .card-action span {
   display: block;
   text-align: center;
+}
+.image-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
 }
 </style>
