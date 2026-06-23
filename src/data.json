@@ -1,129 +1,128 @@
 [
-
-    { 
-        "url": "https://www.youtube.com/",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png",
-        "title": "Youtube",
-        "home": true
-    },
-    { 
-        "url": "https://www.yaplakal.com/",
-        "image": "https://downradar.ru/img/upload/logo/yaplakal_com.png",
-        "title": "Yaplakal",
-        "home": true
-    },
-    { 
-        "url": "https://translate.google.ru/",
-        "image": "https://logos-world.net/wp-content/uploads/2022/05/Google-Translate-Symbol.png",
-        "title": "Google Translate",
-        "home": false
-    },
-    { 
-        "url": "https://www.wildberries.ru",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Wildberries_Logo.png",
-        "title": "Wildberries",
-        "home": true
-    },
-    { 
-        "url": "https://tech.onliner.by/",
-        "image": "https://sp.onliner.by/wp-content/uploads/2019/03/onliner_logo.png",
-        "title": "Onliner",
-        "home": true
-    },
-    { 
-        "url": "https://github.com/",
-        "image": "https://pngimg.com/uploads/github/github_PNG15.png",
-        "title": "Github",
-        "home": false
-    },
-    { 
-        "url": "https://developer.mozilla.org/ru/",
-        "image": "https://techrocks.ru/wp-content/uploads/2017/12/mdn.png",
-        "title": "MDN",
-        "home": false
-    },
-    { 
-        "url": "https://www.kufar.by/",
-        "image": "https://content.kufar.by/static/frontend/img/kufar_logo_meta.png",
-        "title": "Kufar",
-        "home": true
-    },
-    {
-        "url": "https://argocd.infra.bellavka.by/applications?showFavorites=true&proj=&sync=&autoSync=&health=&namespace=&cluster=&labels=",
-        "image": "https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/1/argo-e1igjrrg4noy4q8rgwtags.png/argo-cqux33sc43kaweudnz4we.png",
-        "title": "ArgoCD",
-        "home": false
-    },
-    {
-        "url": "https://prj.bellavka.by/secure/Dashboard.jspa",
-        "image": "https://1000logos.net/wp-content/uploads/2021/05/Atlassian-Logo-2010s1.png",
-        "title": "JIRA",
-        "home": false
-    },
-    { 
-        "url": "https://api.bellavka.by/",
-        "image": "https://cdn-icons-png.flaticon.com/512/906/906343.png",
-        "title": "API",
-        "home": false
-    },
-    { 
-        "url": "https://gitlavka.bellavka.by",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/GitLab_logo.svg/1200px-GitLab_logo.svg.png",
-        "title": "dev git",
-        "home": false
-    },
-    { 
-        "url": "https://ozon.by",
-        "image": "https://upload.wikimedia.org/wikipedia/ru/thumb/e/ec/OZON_2019.svg/2560px-OZON_2019.svg.png",
-        "title": "Ozon",
-        "home": true
-    },
-    { 
-        "url": "http://seasonvar.ru/",
-        "image": "http://cdn.bigsv.ru/asset/img/top.logo.ny.png",
-        "title": "seasonvar.ru",
-        "home": true
-    },
-    { 
-        "url": "https://ramonki.by/",
-        "image": "/img/ramonki.svg",
-        "title": "by",
-        "home": false
-    },
-    { 
-        "url": "https://ramonki.ru/",
-        "image": "/img/ramonki.svg",
-        "title": "ru",
-        "home": false
-    },
-    {
-        "url": "https://ramonki.kz/",
-        "image": "/img/ramonki.svg",
-        "title": "kz",
-        "home": false
-    },
-    {
-        "url": "https://bellavka.by",
-        "image": "https://bellavka.ru/bellavka_logo-redesign.svg",
-        "title": "by",
-        "home": false
-    },
-    {
-        "url": "https://bellavka.ru",
-        "image": "https://bellavka.ru/bellavka_logo-redesign.svg",
-        "title": "ru",
-        "home": false
-    },
-    {
-        "url": "https://bellavka.kz",
-        "image": "https://bellavka.ru/bellavka_logo-redesign.svg",
-        "title": "kz",
-        "home": false
-    },
-    {
-        "url": "https://chatgpt.com/",
-        "image": "https://pngimg.com/d/chatgpt_PNG13.png",
-        "title": "ChatGPT",
-        "home": false
-    }
+  {
+    "url": "https://www.youtube.com/",
+    "image": "/img/youtube-logo.svg",
+    "title": "Youtube",
+    "home": true
+  },
+  {
+    "url": "https://www.yaplakal.com/",
+    "image": "https://downradar.ru/img/upload/logo/yaplakal_com.png",
+    "title": "Yaplakal",
+    "home": true
+  },
+  {
+    "url": "https://translate.google.ru/",
+    "image": "https://logos-world.net/wp-content/uploads/2022/05/Google-Translate-Symbol.png",
+    "title": "Google Translate",
+    "home": false
+  },
+  {
+    "url": "https://www.wildberries.ru",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Wildberries_Logo.png",
+    "title": "Wildberries",
+    "home": true
+  },
+  {
+    "url": "https://tech.onliner.by/",
+    "image": "https://sp.onliner.by/wp-content/uploads/2019/03/onliner_logo.png",
+    "title": "Onliner",
+    "home": true
+  },
+  {
+    "url": "https://github.com/",
+    "image": "https://pngimg.com/uploads/github/github_PNG15.png",
+    "title": "Github",
+    "home": false
+  },
+  {
+    "url": "https://developer.mozilla.org/ru/",
+    "image": "https://techrocks.ru/wp-content/uploads/2017/12/mdn.png",
+    "title": "MDN",
+    "home": false
+  },
+  {
+    "url": "https://www.kufar.by/",
+    "image": "https://content.kufar.by/static/frontend/img/kufar_logo_meta.png",
+    "title": "Kufar",
+    "home": true
+  },
+  {
+    "url": "https://argocd.infra.bellavka.by/applications?showFavorites=true&proj=&sync=&autoSync=&health=&namespace=&cluster=&labels=",
+    "image": "https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/1/argo-e1igjrrg4noy4q8rgwtags.png/argo-cqux33sc43kaweudnz4we.png",
+    "title": "ArgoCD",
+    "home": false
+  },
+  {
+    "url": "https://prj.bellavka.by/secure/Dashboard.jspa",
+    "image": "https://1000logos.net/wp-content/uploads/2021/05/Atlassian-Logo-2010s1.png",
+    "title": "JIRA",
+    "home": false
+  },
+  {
+    "url": "https://api.bellavka.by/",
+    "image": "https://cdn-icons-png.flaticon.com/512/906/906343.png",
+    "title": "API",
+    "home": false
+  },
+  {
+    "url": "https://gitlavka.bellavka.by",
+    "image": "/img/gitlab-logo.svg",
+    "title": "dev git",
+    "home": false
+  },
+  {
+    "url": "https://ozon.by",
+    "image": "/img/ozon-icon-logo.svg",
+    "title": "Ozon",
+    "home": true
+  },
+  {
+    "url": "http://seasonvar.ru/",
+    "image": "http://cdn.bigsv.ru/asset/img/top.logo.ny.png",
+    "title": "seasonvar.ru",
+    "home": true
+  },
+  {
+    "url": "https://ramonki.by/",
+    "image": "/img/ramonki.svg",
+    "title": "by",
+    "home": false
+  },
+  {
+    "url": "https://ramonki.ru/",
+    "image": "/img/ramonki.svg",
+    "title": "ru",
+    "home": false
+  },
+  {
+    "url": "https://ramonki.kz/",
+    "image": "/img/ramonki.svg",
+    "title": "kz",
+    "home": false
+  },
+  {
+    "url": "https://bellavka.by",
+    "image": "/img/bellavka.svg",
+    "title": "by",
+    "home": false
+  },
+  {
+    "url": "https://bellavka.ru",
+    "image": "/img/bellavka.svg",
+    "title": "ru",
+    "home": false
+  },
+  {
+    "url": "https://bellavka.kz",
+    "image": "/img/bellavka.svg",
+    "title": "kz",
+    "home": false
+  },
+  {
+    "url": "https://chatgpt.com/",
+    "image": "/img/chatgpt-logo.png",
+    "title": "ChatGPT",
+    "home": false
+  }
 ]
