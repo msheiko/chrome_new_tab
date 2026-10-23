@@ -1,5 +1,35 @@
 [
   {
+    "url": "https://claude.ai/",
+    "image": "/img/claude.png",
+    "title": "Claude",
+    "home": false
+  },
+  {
+    "url": "https://chatgpt.com/",
+    "image": "/img/chatgpt-logo.png",
+    "title": "ChatGPT",
+    "home": false
+  },
+  {
+    "url": "https://gitlavka.bellavka.by",
+    "image": "/img/gitlab-logo.svg",
+    "title": "dev git",
+    "home": false
+  },
+  {
+    "url": "https://argocd.infra.bellavka.by/applications?showFavorites=true&proj=&sync=&autoSync=&health=&namespace=&cluster=&labels=",
+    "image": "/img/argocd.png",
+    "title": "ArgoCD",
+    "home": false
+  },
+  {
+    "url": "https://prj.bellavka.by/secure/Dashboard.jspa",
+    "image": "/img/jira.png",
+    "title": "JIRA",
+    "home": false
+  },
+  {
     "url": "https://www.youtube.com/",
     "image": "/img/youtube-logo.svg",
     "title": "Youtube",
@@ -48,27 +78,9 @@
     "home": true
   },
   {
-    "url": "https://argocd.infra.bellavka.by/applications?showFavorites=true&proj=&sync=&autoSync=&health=&namespace=&cluster=&labels=",
-    "image": "/img/argocd.png",
-    "title": "ArgoCD",
-    "home": false
-  },
-  {
-    "url": "https://prj.bellavka.by/secure/Dashboard.jspa",
-    "image": "/img/jira.png",
-    "title": "JIRA",
-    "home": false
-  },
-  {
     "url": "https://api.bellavka.by/",
     "image": "/img/api.png",
     "title": "API",
-    "home": false
-  },
-  {
-    "url": "https://gitlavka.bellavka.by",
-    "image": "/img/gitlab-logo.svg",
-    "title": "dev git",
     "home": false
   },
   {
@@ -135,18 +147,6 @@
     "url": "https://new.nashamoda.kz/",
     "image": "/img/nashamoda.png",
     "title": "kz",
-    "home": false
-  },
-  {
-    "url": "https://chatgpt.com/",
-    "image": "/img/chatgpt-logo.png",
-    "title": "ChatGPT",
-    "home": false
-  },
-  {
-    "url": "https://claude.ai/",
-    "image": "/img/claude.png",
-    "title": "Claude",
     "home": false
   }
 ]

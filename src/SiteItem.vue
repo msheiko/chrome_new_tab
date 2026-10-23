@@ -34,8 +34,8 @@ const imageError = ref(false);
 <style scoped>
 .box {
   display: block;
-  flex: 0 0 250px;
-  height: 180px;
+  flex: 0 0 203px;
+  height: 146px;
   overflow: hidden;
   border-radius: 5px;
   font-family: 'Fira Code', system-ui, sans-serif;
@@ -76,15 +76,15 @@ const imageError = ref(false);
 }
 
 .image-placeholder {
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: bold;
 }
 

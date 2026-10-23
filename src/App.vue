@@ -83,7 +83,7 @@ body {
 }
 
 main {
-  padding-top: 50px;
+  padding-top: 40px;
   position: relative;
   min-height: 200px;
 }
@@ -92,8 +92,8 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  row-gap: 30px;
-  column-gap: 50px;
+  row-gap: 24px;
+  column-gap: 40px;
 }
 
 .toggle-button {
@@ -153,7 +153,7 @@ main {
 
 @media (max-width: 768px) {
   main {
-    padding: 50px 10px 20px;
+    padding: 40px 10px 20px;
   }
 }
 </style>
