@@ -7,61 +7,61 @@
   },
   {
     "url": "https://www.yaplakal.com/",
-    "image": "https://downradar.ru/img/upload/logo/yaplakal_com.png",
+    "image": "/img/yaplakal.png",
     "title": "Yaplakal",
     "home": true
   },
   {
     "url": "https://translate.google.ru/",
-    "image": "https://logos-world.net/wp-content/uploads/2022/05/Google-Translate-Symbol.png",
+    "image": "/img/google-translate.png",
     "title": "Google Translate",
     "home": false
   },
   {
     "url": "https://www.wildberries.ru",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Wildberries_Logo.png",
+    "image": "/img/wildberries.png",
     "title": "Wildberries",
     "home": true
   },
   {
     "url": "https://tech.onliner.by/",
-    "image": "https://sp.onliner.by/wp-content/uploads/2019/03/onliner_logo.png",
+    "image": "/img/onliner.png",
     "title": "Onliner",
     "home": true
   },
   {
     "url": "https://github.com/",
-    "image": "https://pngimg.com/uploads/github/github_PNG15.png",
+    "image": "/img/github.png",
     "title": "Github",
     "home": false
   },
   {
     "url": "https://developer.mozilla.org/ru/",
-    "image": "https://techrocks.ru/wp-content/uploads/2017/12/mdn.png",
+    "image": "/img/mdn.png",
     "title": "MDN",
     "home": false
   },
   {
     "url": "https://www.kufar.by/",
-    "image": "https://content.kufar.by/static/frontend/img/kufar_logo_meta.png",
+    "image": "/img/kufar.png",
     "title": "Kufar",
     "home": true
   },
   {
     "url": "https://argocd.infra.bellavka.by/applications?showFavorites=true&proj=&sync=&autoSync=&health=&namespace=&cluster=&labels=",
-    "image": "https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/1/argo-e1igjrrg4noy4q8rgwtags.png/argo-cqux33sc43kaweudnz4we.png",
+    "image": "/img/argocd.png",
     "title": "ArgoCD",
     "home": false
   },
   {
     "url": "https://prj.bellavka.by/secure/Dashboard.jspa",
-    "image": "https://1000logos.net/wp-content/uploads/2021/05/Atlassian-Logo-2010s1.png",
+    "image": "/img/jira.png",
     "title": "JIRA",
     "home": false
   },
   {
     "url": "https://api.bellavka.by/",
-    "image": "https://cdn-icons-png.flaticon.com/512/906/906343.png",
+    "image": "/img/api.png",
     "title": "API",
     "home": false
   },
@@ -79,7 +79,7 @@
   },
   {
     "url": "http://seasonvar.ru/",
-    "image": "http://cdn.bigsv.ru/asset/img/top.logo.ny.png",
+    "image": "/img/seasonvar.png",
     "title": "seasonvar.ru",
     "home": true
   },
@@ -120,9 +120,33 @@
     "home": false
   },
   {
+    "url": "https://new.nashamoda.by/",
+    "image": "/img/nashamoda.png",
+    "title": "by",
+    "home": false
+  },
+  {
+    "url": "https://new.nashamodaby.ru/",
+    "image": "/img/nashamoda.png",
+    "title": "ru",
+    "home": false
+  },
+  {
+    "url": "https://new.nashamoda.kz/",
+    "image": "/img/nashamoda.png",
+    "title": "kz",
+    "home": false
+  },
+  {
     "url": "https://chatgpt.com/",
     "image": "/img/chatgpt-logo.png",
     "title": "ChatGPT",
+    "home": false
+  },
+  {
+    "url": "https://claude.ai/",
+    "image": "/img/claude.png",
+    "title": "Claude",
     "home": false
   }
 ]

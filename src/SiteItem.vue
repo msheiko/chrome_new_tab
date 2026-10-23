@@ -1,12 +1,12 @@
 <template>
   <a class="box" :href="site.url" rel="noopener noreferrer">
     <div class="card-image">
-      <img 
+      <img
         v-if="!imageError"
-        :src="site.image" 
-        :alt="site.title" 
+        :src="site.image"
+        :alt="site.title"
         loading="lazy"
-        @error="handleImageError"
+        @error="imageError = true"
       />
       <div v-else class="image-placeholder">
         {{ site.title.charAt(0).toUpperCase() }}
@@ -29,58 +29,52 @@ defineProps({
 });
 
 const imageError = ref(false);
-
-const handleImageError = () => {
-  imageError.value = true;
-};
 </script>
 
 <style scoped>
 .box {
   display: block;
+  flex: 0 0 250px;
   height: 180px;
   overflow: hidden;
-  flex: 0 0 22%;
   border-radius: 5px;
-  font-family: 'Fira Code', sans-serif;
+  font-family: 'Fira Code', system-ui, sans-serif;
   text-decoration: none;
   font-size: 12px;
-  background: var(--card-bg, #ffffff);
-  color: var(--text-color, rgb(65, 65, 65));
-  flex: 0 0 250px;
-  box-shadow: var(--card-shadow, rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px);
+  background: var(--card-bg);
+  color: var(--text-color);
+  box-shadow: var(--card-shadow);
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease,
     transform 0.2s ease;
-  cursor: pointer;
 }
 
 .box:hover {
-  box-shadow: var(--card-shadow, rgba(14, 30, 37, 0.2) 0px 4px 8px 0px,
-    rgba(14, 30, 37, 0.4) 0px 4px 20px 0px);
+  box-shadow: var(--card-shadow-hover);
 }
+
 .card-image {
   height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.box:hover img {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
+
 .card-image img {
   display: block;
-  height: auto;
-  width: auto;
   max-width: 70%;
   max-height: 70%;
-  transform: scale(1);
+  transition: transform 0.3s ease;
 }
+
+.box:hover img {
+  transform: scale(1.05);
+}
+
 .card-action span {
   display: block;
   text-align: center;
 }
+
 .image-placeholder {
   width: 80px;
   height: 80px;
@@ -92,5 +86,11 @@ const handleImageError = () => {
   justify-content: center;
   font-size: 32px;
   font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .box {
+    flex-basis: 100%;
+  }
 }
 </style>

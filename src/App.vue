@@ -1,60 +1,51 @@
 <template>
-  <Toggle
+  <ModeToggle
+    v-model="isHome"
     class="toggle-button"
-    @change="changeMode"
-    v-model="mode"
-    v-bind="labels"
+    :on-label="HOME_LABEL"
+    :off-label="WORK_LABEL"
   />
   <main>
     <Transition name="fade" mode="out-in">
       <div v-if="sites.length === 0" key="empty" class="empty-state">
-        <p>Нет сайтов в режиме "{{ mode ? 'Home' : 'Work' }}"</p>
+        <p>Нет сайтов в режиме "{{ isHome ? HOME_LABEL : WORK_LABEL }}"</p>
       </div>
       <TransitionGroup v-else name="site-list" tag="div" class="sites-container">
-        <site-item v-for="site in sites" :site="site" :key="site.url" />
+        <SiteItem v-for="site in sites" :key="site.url" :site="site" />
       </TransitionGroup>
     </Transition>
   </main>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
-import SiteItem from "./SiteItem.vue";
-import "@vueform/toggle/themes/default.css";
-import Toggle from "@vueform/toggle";
-import json from "./data.json";
+import { ref, computed, watch } from 'vue';
+import ModeToggle from './ModeToggle.vue';
+import SiteItem from './SiteItem.vue';
+import allSites from './data.json';
 
-const getSavedMode = () => {
+const STORAGE_KEY = 'mode';
+const HOME_LABEL = 'Home';
+const WORK_LABEL = 'Work';
+
+const loadMode = () => {
   try {
-    return localStorage.getItem("mode") === "true";
+    return localStorage.getItem(STORAGE_KEY) === 'true';
   } catch {
     return false;
   }
 };
 
-const savedMode = getSavedMode();
-const mode = ref(savedMode);
-const allSites = ref(json);
+const isHome = ref(loadMode());
 
-const labels = {
-  onLabel: "Home",
-  offLabel: "Work",
-};
-
-const sites = computed(() => {
-  return allSites.value.filter((s) => s.home === mode.value);
+watch(isHome, (value) => {
+  try {
+    localStorage.setItem(STORAGE_KEY, String(value));
+  } catch {
+    // Режим просто не сохранится между вкладками
+  }
 });
 
-const changeMode = (value) => {
-  try {
-    localStorage.setItem("mode", value);
-    mode.value = value;
-  } catch (e) {
-     
-    console.error("Failed to save mode to localStorage:", e);
-    mode.value = value;
-  }
-};
+const sites = computed(() => allSites.filter((s) => s.home === isHome.value));
 </script>
 
 <style>
@@ -65,6 +56,8 @@ const changeMode = (value) => {
   --card-bg: #ffffff;
   --card-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  --card-shadow-hover: rgba(14, 30, 37, 0.2) 0px 4px 8px 0px,
+    rgba(14, 30, 37, 0.4) 0px 4px 20px 0px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -75,13 +68,15 @@ const changeMode = (value) => {
     --card-bg: rgb(70, 70, 70);
     --card-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px 0px,
       rgba(0, 0, 0, 0.5) 0px 2px 16px 0px;
+    --card-shadow-hover: rgba(0, 0, 0, 0.45) 0px 4px 8px 0px,
+      rgba(0, 0, 0, 0.7) 0px 4px 20px 0px;
   }
 }
 
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   background: var(--bg-color);
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -158,14 +153,7 @@ main {
 
 @media (max-width: 768px) {
   main {
-    padding: 20px 10px;
-    gap: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .box {
-    flex: 0 0 100%;
+    padding: 50px 10px 20px;
   }
 }
 </style>

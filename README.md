@@ -33,7 +33,7 @@ npm install
 npm run dev
 ```
 
-Сервер будет доступен по адресу `http://localhost:3000`
+Сервер будет доступен по адресу `http://localhost:3000/newtab.html`
 
 ## 📦 Сборка
 
@@ -67,15 +67,16 @@ npm run lint
 chrome_new_tab/
 ├── public/              # Статические файлы
 │   ├── favicon.ico
-│   ├── img/            # Изображения
+│   ├── img/            # Логотипы сайтов
 │   └── manifest.json   # Манифест расширения
 ├── src/                # Исходный код
 │   ├── App.vue         # Главный компонент
+│   ├── ModeToggle.vue  # Переключатель Home/Work
 │   ├── SiteItem.vue    # Компонент карточки сайта
 │   ├── data.json       # Данные сайтов
 │   └── main.js         # Точка входа
 ├── dist/               # Собранные файлы (создается при сборке)
-├── index.html          # HTML шаблон
+├── newtab.html         # HTML шаблон
 ├── vite.config.js      # Конфигурация Vite
 ├── eslint.config.js    # Конфигурация ESLint
 └── package.json        # Зависимости и скрипты
@@ -88,7 +89,7 @@ chrome_new_tab/
 ```json
 {
   "url": "https://example.com",
-  "image": "https://example.com/logo.png",
+  "image": "/img/example.png",
   "title": "Example",
   "home": true  // true для домашних, false для рабочих
 }
@@ -96,7 +97,7 @@ chrome_new_tab/
 
 ### Поля:
 - `url` - URL сайта
-- `image` - URL изображения/логотипа сайта
+- `image` - путь к логотипу в `public/img/` (например, `/img/example.png`); если картинка не загрузится, вместо неё будет показана первая буква названия
 - `title` - Название сайта
 - `home` - `true` для домашних сайтов, `false` для рабочих
 
@@ -128,7 +129,6 @@ chrome_new_tab/
 - **Vue 3** - Прогрессивный JavaScript фреймворк
 - **Vite** - Быстрый сборщик и dev-сервер
 - **Composition API** - Современный подход к написанию компонентов Vue
-- **@vueform/toggle** - Компонент переключателя
 - **ESLint** - Линтер для проверки кода
 
 ## 📝 Скрипты
@@ -140,9 +140,7 @@ chrome_new_tab/
 
 ## 🔒 Разрешения расширения
 
-Расширение требует следующие разрешения:
-- `bookmarks` - Доступ к закладкам (зарезервировано для будущего использования)
-- `<all_urls>` - Доступ ко всем URL для корректной работы ссылок
+Расширение не запрашивает никаких разрешений: оно только подменяет страницу новой вкладки (`chrome_url_overrides`).
 
 ## 📄 Лицензия
 
