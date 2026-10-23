@@ -11,14 +11,16 @@
   },
   "dependencies": {
     "@vueform/toggle": "^2.1.4",
-    "vue": "^3.5.25"
+    "vue": "^3.5.44"
   },
   "devDependencies": {
-    "@eslint/js": "^9.18.0",
-    "@vitejs/plugin-vue": "^5.2.1",
-    "eslint": "^9.18.0",
-    "eslint-plugin-vue": "^9.32.0",
-    "terser": "^5.36.0",
-    "vite": "^6.0.7"
+    "@eslint/js": "^10.0.1",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "eslint": "^10.13.0",
+    "eslint-plugin-vue": "^10.11.1",
+    "globals": "^17.13.0",
+    "terser": "^5.51.2",
+    "vite": "^8.3.5",
+    "vue-eslint-parser": "^10.4.1"
   }
 }

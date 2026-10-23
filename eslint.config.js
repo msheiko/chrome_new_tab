@@ -1,15 +1,19 @@
 import vue from 'eslint-plugin-vue';
 import js from '@eslint/js';
+import globals from 'globals';
 
 export default [
+  {
+    ignores: ['dist/**', 'node_modules/**', 'public/**'],
+  },
   js.configs.recommended,
   ...vue.configs['flat/essential'],
   {
     languageOptions: {
-      ecmaVersion: 2022,
+      ecmaVersion: 'latest',
       sourceType: 'module',
       globals: {
-        process: 'readonly',
+        ...globals.browser,
       },
     },
     rules: {
@@ -18,7 +22,11 @@ export default [
     },
   },
   {
-    ignores: ['dist/**', 'node_modules/**', 'public/**'],
+    files: ['*.config.js'],
+    languageOptions: {
+      globals: {
+        ...globals.node,
+      },
+    },
   },
 ];
-

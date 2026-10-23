@@ -26,7 +26,7 @@ export default defineConfig({
   publicDir: 'public',
   build: {
     outDir: 'dist',
-    rollupOptions: {
+    rolldownOptions: {
       input: resolve(__dirname, 'index.html'),
       output: {
         entryFileNames: 'js/[name].[hash].js',
