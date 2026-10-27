@@ -99,54 +99,63 @@
     "url": "https://ramonki.by/",
     "image": "/img/ramonki.svg",
     "title": "by",
-    "home": false
+    "home": false,
+    "group": "Ramonki"
   },
   {
     "url": "https://ramonki.ru/",
     "image": "/img/ramonki.svg",
     "title": "ru",
-    "home": false
+    "home": false,
+    "group": "Ramonki"
   },
   {
     "url": "https://ramonki.kz/",
     "image": "/img/ramonki.svg",
     "title": "kz",
-    "home": false
+    "home": false,
+    "group": "Ramonki"
   },
   {
     "url": "https://bellavka.by",
     "image": "/img/bellavka.svg",
     "title": "by",
-    "home": false
+    "home": false,
+    "group": "Bellavka"
   },
   {
     "url": "https://bellavka.ru",
     "image": "/img/bellavka.svg",
     "title": "ru",
-    "home": false
+    "home": false,
+    "group": "Bellavka"
   },
   {
     "url": "https://bellavka.kz",
     "image": "/img/bellavka.svg",
     "title": "kz",
-    "home": false
+    "home": false,
+    "group": "Bellavka"
   },
   {
     "url": "https://new.nashamoda.by/",
     "image": "/img/nashamoda.png",
     "title": "by",
-    "home": false
+    "home": false,
+    "group": "NashaModa"
   },
   {
     "url": "https://new.nashamodaby.ru/",
     "image": "/img/nashamoda.png",
     "title": "ru",
-    "home": false
+    "home": false,
+    "group": "NashaModa"
   },
   {
     "url": "https://new.nashamoda.kz/",
     "image": "/img/nashamoda.png",
     "title": "kz",
-    "home": false
+    "home": false,
+    "group": "NashaModa"
   }
 ]

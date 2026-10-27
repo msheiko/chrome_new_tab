@@ -11,7 +11,10 @@
         <p>Нет сайтов в режиме "{{ isHome ? HOME_LABEL : WORK_LABEL }}"</p>
       </div>
       <TransitionGroup v-else name="site-list" tag="div" class="sites-container">
-        <SiteItem v-for="site in sites" :key="site.url" :site="site" />
+        <template v-for="item in items" :key="item.key">
+          <GroupItem v-if="item.group" :name="item.group" :sites="item.sites" />
+          <SiteItem v-else :site="item.site" />
+        </template>
       </TransitionGroup>
     </Transition>
   </main>
@@ -21,6 +24,7 @@
 import { ref, computed, watch } from 'vue';
 import ModeToggle from './ModeToggle.vue';
 import SiteItem from './SiteItem.vue';
+import GroupItem from './GroupItem.vue';
 import allSites from './data.json';
 
 const STORAGE_KEY = 'mode';
@@ -46,6 +50,24 @@ watch(isHome, (value) => {
 });
 
 const sites = computed(() => allSites.filter((s) => s.home === isHome.value));
+
+// Сайты с одинаковым group схлопываются в одну папку на месте первого из них
+const items = computed(() => {
+  const result = [];
+  const groups = new Map();
+  for (const site of sites.value) {
+    if (!site.group) {
+      result.push({ key: site.url, site });
+    } else if (groups.has(site.group)) {
+      groups.get(site.group).sites.push(site);
+    } else {
+      const entry = { key: `group:${site.group}`, group: site.group, sites: [site] };
+      groups.set(site.group, entry);
+      result.push(entry);
+    }
+  }
+  return result;
+});
 </script>
 
 <style>
