@@ -3,159 +3,186 @@
     "url": "https://claude.ai/",
     "image": "/img/claude.png",
     "title": "Claude",
-    "home": false
+    "group": "AI"
   },
   {
     "url": "https://chatgpt.com/",
     "image": "/img/chatgpt-logo.png",
     "title": "ChatGPT",
-    "home": false
+    "group": "AI"
   },
   {
     "url": "https://gitlavka.bellavka.by",
     "image": "/img/gitlab-logo.svg",
     "title": "dev git",
-    "home": false
-  },
-  {
-    "url": "https://argocd.infra.bellavka.by/applications?showFavorites=true&proj=&sync=&autoSync=&health=&namespace=&cluster=&labels=",
-    "image": "/img/argocd.png",
-    "title": "ArgoCD",
-    "home": false
-  },
-  {
-    "url": "https://prj.bellavka.by/secure/Dashboard.jspa",
-    "image": "/img/jira.png",
-    "title": "JIRA",
-    "home": false
-  },
-  {
-    "url": "https://www.youtube.com/",
-    "image": "/img/youtube-logo.svg",
-    "title": "Youtube",
-    "home": true
-  },
-  {
-    "url": "https://www.yaplakal.com/",
-    "image": "/img/yaplakal.png",
-    "title": "Yaplakal",
-    "home": true
-  },
-  {
-    "url": "https://translate.google.ru/",
-    "image": "/img/google-translate.png",
-    "title": "Google Translate",
-    "home": false
-  },
-  {
-    "url": "https://www.wildberries.ru",
-    "image": "/img/wildberries.png",
-    "title": "Wildberries",
-    "home": true
-  },
-  {
-    "url": "https://tech.onliner.by/",
-    "image": "/img/onliner.png",
-    "title": "Onliner",
-    "home": true
-  },
-  {
-    "url": "https://github.com/",
-    "image": "/img/github.png",
-    "title": "Github",
-    "home": false
-  },
-  {
-    "url": "https://developer.mozilla.org/ru/",
-    "image": "/img/mdn.png",
-    "title": "MDN",
-    "home": false
-  },
-  {
-    "url": "https://www.kufar.by/",
-    "image": "/img/kufar.png",
-    "title": "Kufar",
-    "home": true
-  },
-  {
-    "url": "https://api.bellavka.by/",
-    "image": "/img/api.png",
-    "title": "API",
-    "home": false
-  },
-  {
-    "url": "https://ozon.by",
-    "image": "/img/ozon-icon-logo.svg",
-    "title": "Ozon",
-    "home": true
-  },
-  {
-    "url": "http://seasonvar.ru/",
-    "image": "/img/seasonvar.png",
-    "title": "seasonvar.ru",
-    "home": true
+    "group": "Work"
   },
   {
     "url": "https://ramonki.by/",
     "image": "/img/ramonki.svg",
     "title": "by",
-    "home": false,
     "group": "Ramonki"
   },
   {
     "url": "https://ramonki.ru/",
     "image": "/img/ramonki.svg",
     "title": "ru",
-    "home": false,
     "group": "Ramonki"
   },
   {
     "url": "https://ramonki.kz/",
     "image": "/img/ramonki.svg",
     "title": "kz",
-    "home": false,
     "group": "Ramonki"
   },
   {
     "url": "https://bellavka.by",
     "image": "/img/bellavka.svg",
     "title": "by",
-    "home": false,
     "group": "Bellavka"
   },
   {
     "url": "https://bellavka.ru",
     "image": "/img/bellavka.svg",
     "title": "ru",
-    "home": false,
     "group": "Bellavka"
   },
   {
     "url": "https://bellavka.kz",
     "image": "/img/bellavka.svg",
     "title": "kz",
-    "home": false,
     "group": "Bellavka"
   },
   {
     "url": "https://new.nashamoda.by/",
     "image": "/img/nashamoda.png",
     "title": "by",
-    "home": false,
     "group": "NashaModa"
   },
   {
     "url": "https://new.nashamodaby.ru/",
     "image": "/img/nashamoda.png",
     "title": "ru",
-    "home": false,
     "group": "NashaModa"
   },
   {
     "url": "https://new.nashamoda.kz/",
     "image": "/img/nashamoda.png",
     "title": "kz",
-    "home": false,
     "group": "NashaModa"
+  },
+  {
+    "url": "https://argocd.infra.bellavka.by/applications?showFavorites=true&proj=&sync=&autoSync=&health=&namespace=&cluster=&labels=",
+    "image": "/img/argocd.png",
+    "title": "ArgoCD",
+    "group": "Work"
+  },
+  {
+    "url": "https://prj.bellavka.by/secure/Dashboard.jspa",
+    "image": "/img/jira.png",
+    "title": "JIRA",
+    "group": "Work"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "image": "/img/youtube-logo.svg",
+    "title": "Youtube",
+    "group": "Relax"
+  },
+  {
+    "url": "https://www.yaplakal.com/",
+    "image": "/img/yaplakal.png",
+    "title": "Yaplakal",
+    "group": "Relax"
+  },
+  {
+    "url": "https://translate.google.ru/",
+    "image": "/img/google-translate.png",
+    "title": "Google Translate",
+    "group": "Мусор"
+  },
+  {
+    "url": "https://www.wildberries.ru",
+    "image": "/img/wildberries.png",
+    "title": "Wildberries",
+    "group": "Shop"
+  },
+  {
+    "url": "https://tech.onliner.by/",
+    "image": "/img/onliner.png",
+    "title": "Onliner",
+    "group": "Relax"
+  },
+  {
+    "url": "https://github.com/",
+    "image": "/img/github.png",
+    "title": "Github",
+    "group": "Dev"
+  },
+  {
+    "url": "https://developer.mozilla.org/ru/",
+    "image": "/img/mdn.png",
+    "title": "MDN",
+    "group": "Dev"
+  },
+  {
+    "url": "https://www.kufar.by/",
+    "image": "/img/kufar.png",
+    "title": "Kufar",
+    "group": "Shop"
+  },
+  {
+    "url": "https://api.bellavka.by/",
+    "image": "/img/api.png",
+    "title": "API",
+    "group": "Мусор"
+  },
+  {
+    "url": "https://ozon.by",
+    "image": "/img/ozon-icon-logo.svg",
+    "title": "Ozon",
+    "group": "Shop"
+  },
+  {
+    "url": "http://seasonvar.ru/",
+    "image": "/img/seasonvar.png",
+    "title": "seasonvar.ru",
+    "group": "Relax"
+  },
+  {
+    "url": "https://chat.deepseek.com/",
+    "image": "/img/deepseek.png",
+    "title": "DeepSeek",
+    "group": "AI"
+  },
+  {
+    "url": "https://gemini.google.com/",
+    "image": "/img/gemini.png",
+    "title": "Gemini",
+    "group": "AI"
+  },
+  {
+    "url": "https://grafana.infra.bellavka.by/",
+    "image": "/img/grafana.svg",
+    "title": "Grafana",
+    "group": "Work"
+  },
+  {
+    "url": "https://www.twitch.tv/",
+    "image": "/img/twitch.png",
+    "title": "Twitch",
+    "group": "Relax"
+  },
+  {
+    "url": "https://www.21vek.by/",
+    "image": "/img/21vek.png",
+    "title": "21vek",
+    "group": "Shop"
+  },
+  {
+    "url": "https://pikabu.ru/",
+    "image": "/img/pikabu.png",
+    "title": "Pikabu",
+    "group": "Relax"
   }
 ]

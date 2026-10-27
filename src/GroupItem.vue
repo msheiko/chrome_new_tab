@@ -55,15 +55,15 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown));
 <style scoped>
 .box {
   display: block;
-  flex: 0 0 203px;
-  height: 146px;
+  flex: 0 0 260px;
+  height: 190px;
   padding: 0;
   border: 0;
   cursor: pointer;
   overflow: hidden;
   border-radius: 5px;
   font-family: 'Fira Code', system-ui, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   background: var(--card-bg);
   color: var(--text-color);
   box-shadow: var(--card-shadow);
@@ -84,16 +84,16 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown));
 .folder-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 6px;
-  width: 80px;
-  padding: 8px;
-  border-radius: 14px;
+  gap: 8px;
+  width: 112px;
+  padding: 10px;
+  border-radius: 18px;
   background: rgba(128, 128, 128, 0.2);
 }
 
 .folder-grid.single {
   grid-template-columns: 1fr;
-  width: 70px;
+  width: 96px;
 }
 
 .folder-grid img {

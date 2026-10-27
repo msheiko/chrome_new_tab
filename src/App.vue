@@ -1,61 +1,25 @@
 <template>
-  <ModeToggle
-    v-model="isHome"
-    class="toggle-button"
-    :on-label="HOME_LABEL"
-    :off-label="WORK_LABEL"
-  />
   <main>
-    <Transition name="fade" mode="out-in">
-      <div v-if="sites.length === 0" key="empty" class="empty-state">
-        <p>Нет сайтов в режиме "{{ isHome ? HOME_LABEL : WORK_LABEL }}"</p>
-      </div>
-      <TransitionGroup v-else name="site-list" tag="div" class="sites-container">
-        <template v-for="item in items" :key="item.key">
-          <GroupItem v-if="item.group" :name="item.group" :sites="item.sites" />
-          <SiteItem v-else :site="item.site" />
-        </template>
-      </TransitionGroup>
-    </Transition>
+    <TransitionGroup name="site-list" tag="div" class="sites-container">
+      <template v-for="item in items" :key="item.key">
+        <GroupItem v-if="item.group" :name="item.group" :sites="item.sites" />
+        <SiteItem v-else :site="item.site" />
+      </template>
+    </TransitionGroup>
   </main>
 </template>
 
 <script setup>
-import { ref, computed, watch } from 'vue';
-import ModeToggle from './ModeToggle.vue';
+import { computed } from 'vue';
 import SiteItem from './SiteItem.vue';
 import GroupItem from './GroupItem.vue';
 import allSites from './data.json';
-
-const STORAGE_KEY = 'mode';
-const HOME_LABEL = 'Home';
-const WORK_LABEL = 'Work';
-
-const loadMode = () => {
-  try {
-    return localStorage.getItem(STORAGE_KEY) === 'true';
-  } catch {
-    return false;
-  }
-};
-
-const isHome = ref(loadMode());
-
-watch(isHome, (value) => {
-  try {
-    localStorage.setItem(STORAGE_KEY, String(value));
-  } catch {
-    // Режим просто не сохранится между вкладками
-  }
-});
-
-const sites = computed(() => allSites.filter((s) => s.home === isHome.value));
 
 // Сайты с одинаковым group схлопываются в одну папку на месте первого из них
 const items = computed(() => {
   const result = [];
   const groups = new Map();
-  for (const site of sites.value) {
+  for (const site of allSites) {
     if (!site.group) {
       result.push({ key: site.url, site });
     } else if (groups.has(site.group)) {
@@ -116,37 +80,6 @@ main {
   justify-content: center;
   row-gap: 24px;
   column-gap: 40px;
-}
-
-.toggle-button {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  transition: transform 0.2s ease;
-  z-index: 10;
-}
-
-.toggle-button:hover {
-  transform: scale(1.05);
-}
-
-.empty-state {
-  width: 100%;
-  text-align: center;
-  padding: 60px 20px;
-  color: var(--text-color-secondary);
-  font-size: 18px;
-}
-
-/* Анимации переключения */
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
 }
 
 /* Анимации для списка сайтов */
