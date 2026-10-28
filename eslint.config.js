@@ -1,6 +1,7 @@
 import vue from 'eslint-plugin-vue';
 import js from '@eslint/js';
 import globals from 'globals';
+import prettier from 'eslint-config-prettier';
 
 export default [
   {
@@ -8,6 +9,7 @@ export default [
   },
   js.configs.recommended,
   ...vue.configs['flat/essential'],
+  prettier,
   {
     languageOptions: {
       ecmaVersion: 'latest',
