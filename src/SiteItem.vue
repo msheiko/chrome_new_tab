@@ -63,6 +63,11 @@ const imageError = ref(false);
   display: block;
   max-width: 70%;
   max-height: 70%;
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 14px;
+  background: #fff;
+  object-fit: contain;
   transition: transform 0.3s ease;
 }
 

@@ -99,6 +99,10 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown));
 .folder-grid img {
   width: 100%;
   aspect-ratio: 1;
+  box-sizing: border-box;
+  padding: 4px;
+  border-radius: 8px;
+  background: #fff;
   object-fit: contain;
 }
 
