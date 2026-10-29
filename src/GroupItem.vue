@@ -75,7 +75,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown));
 }
 
 .card-image {
-  height: 90%;
+  height: 82%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,6 +104,10 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown));
   border-radius: 8px;
   background: var(--icon-bg);
   object-fit: contain;
+}
+
+.card-action {
+  padding-bottom: 6px;
 }
 
 .card-action span {

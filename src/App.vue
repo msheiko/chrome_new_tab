@@ -53,7 +53,7 @@ const items = computed(() => {
     --text-color: rgb(220, 220, 220);
     --text-color-secondary: rgb(150, 150, 150);
     --card-bg: rgb(70, 70, 70);
-    --icon-bg: #ffffff;
+    --icon-bg: #e0e0e0;
     --card-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px 0px,
       rgba(0, 0, 0, 0.5) 0px 2px 16px 0px;
     --card-shadow-hover: rgba(0, 0, 0, 0.45) 0px 4px 8px 0px,

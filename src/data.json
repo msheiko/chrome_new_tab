@@ -1,7 +1,7 @@
 [
   {
     "url": "https://claude.ai/",
-    "image": "/img/claude.png",
+    "image": "/img/claude.svg",
     "title": "Claude",
     "group": "AI"
   },
@@ -13,7 +13,7 @@
   },
   {
     "url": "https://gitlavka.bellavka.by",
-    "image": "/img/gitlab-logo.svg",
+    "image": "/img/gitlab.svg",
     "title": "dev git",
     "group": "Work"
   },
@@ -73,19 +73,19 @@
   },
   {
     "url": "https://argocd.infra.bellavka.by/applications?showFavorites=true&proj=&sync=&autoSync=&health=&namespace=&cluster=&labels=",
-    "image": "/img/argocd.png",
+    "image": "/img/argocd.svg",
     "title": "ArgoCD",
     "group": "Work"
   },
   {
     "url": "https://prj.bellavka.by/secure/Dashboard.jspa",
-    "image": "/img/jira.png",
+    "image": "/img/jira.svg",
     "title": "JIRA",
     "group": "Work"
   },
   {
     "url": "https://www.youtube.com/",
-    "image": "/img/youtube-logo.svg",
+    "image": "/img/youtube.svg",
     "title": "Youtube",
     "group": "Relax"
   },
@@ -97,7 +97,7 @@
   },
   {
     "url": "https://translate.google.ru/",
-    "image": "/img/google-translate.png",
+    "image": "/img/google-translate.svg",
     "title": "Google Translate",
     "group": "Мусор"
   },
@@ -115,7 +115,7 @@
   },
   {
     "url": "https://github.com/",
-    "image": "/img/github.png",
+    "image": "/img/github.svg",
     "title": "Github",
     "group": "Dev"
   },
@@ -169,7 +169,7 @@
   },
   {
     "url": "https://www.twitch.tv/",
-    "image": "/img/twitch.png",
+    "image": "/img/twitch.svg",
     "title": "Twitch",
     "group": "Relax"
   },

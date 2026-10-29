@@ -53,7 +53,7 @@ const imageError = ref(false);
 }
 
 .card-image {
-  height: 90%;
+  height: 82%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,6 +73,10 @@ const imageError = ref(false);
 
 .box:hover img {
   transform: scale(1.05);
+}
+
+.card-action {
+  padding-bottom: 6px;
 }
 
 .card-action span {
