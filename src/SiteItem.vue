@@ -66,7 +66,7 @@ const imageError = ref(false);
   box-sizing: border-box;
   padding: 8px;
   border-radius: 14px;
-  background: #fff;
+  background: var(--icon-bg);
   object-fit: contain;
   transition: transform 0.3s ease;
 }
