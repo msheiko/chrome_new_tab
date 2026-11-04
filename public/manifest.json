@@ -1,8 +1,14 @@
 {
   "manifest_version": 3,
-  "name": "Custom start page",
-  "version": "1.1",
-  "description": "Custom page for /new tab",
+  "name": "Custom Start Page",
+  "version": "1.2.0",
+  "description": "Replaces the New Tab page with a fast, minimal grid of your favorite sites, organized in folders.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
   "chrome_url_overrides": {
     "newtab": "newtab.html"
   }
