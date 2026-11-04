@@ -8,7 +8,7 @@ export default [
     ignores: ['dist/**', 'node_modules/**', 'public/**'],
   },
   js.configs.recommended,
-  ...vue.configs['flat/essential'],
+  ...vue.configs['flat/recommended'],
   prettier,
   {
     languageOptions: {
@@ -24,7 +24,7 @@ export default [
     },
   },
   {
-    files: ['*.config.js'],
+    files: ['*.config.js', 'src/**/*.test.js'],
     languageOptions: {
       globals: {
         ...globals.node,

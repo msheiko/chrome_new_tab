@@ -20,14 +20,16 @@ jobs:
 
       - run: npm ci
 
-      - name: Check tag matches manifest version
+      - name: Check tag matches package version
         run: |
-          manifest=$(node -p "require('./public/manifest.json').version")
-          if [ "v$manifest" != "${GITHUB_REF_NAME}" ]; then
-            echo "Tag ${GITHUB_REF_NAME} does not match manifest version v$manifest"
+          version=$(node -p "require('./package.json').version")
+          if [ "v$version" != "${GITHUB_REF_NAME}" ]; then
+            echo "Tag ${GITHUB_REF_NAME} does not match package.json version v$version"
             exit 1
           fi
 
+      - run: npm run lint:check
+      - run: npm test
       - run: npm run package
 
       - name: GitHub Release

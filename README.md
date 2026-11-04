@@ -38,7 +38,7 @@ npm run build
 
 ## Инструкция: как добавить, изменить или удалить сайт
 
-Весь список лежит в `src/data.json`, это массив объектов. После правки выполните `npm run build` и обновите расширение.
+Весь список лежит в `src/data/sites.json`, это массив объектов. После правки выполните `npm run build` и обновите расширение.
 
 ```json
 {
@@ -51,7 +51,7 @@ npm run build
 
 | Поле    | Обязательное | Описание |
 |---------|--------------|----------|
-| `url`   | да           | Адрес, на который ведёт карточка. Должен быть уникальным среди сайтов без папки |
+| `url`   | да           | Адрес, на который ведёт карточка. Должен быть уникальным |
 | `image` | да           | Путь к логотипу относительно `public/`, например `/img/example.png`. Подходят PNG и SVG |
 | `title` | да           | Подпись под карточкой |
 | `group` | нет          | Название папки. Без него сайт отображается отдельной карточкой |
@@ -59,8 +59,9 @@ npm run build
 Шаги для нового сайта:
 
 1. Положите логотип в `public/img/` (желательно квадратный, SVG или PNG).
-2. Добавьте объект в `src/data.json`.
-3. Пересоберите (`npm run build`) или проверьте в dev-режиме (`npm run dev`).
+2. Добавьте объект в `src/data/sites.json`.
+3. Запустите `npm test`: он проверит поля, наличие файла логотипа и дубли `url`.
+4. Пересоберите (`npm run build`) или проверьте в dev-режиме (`npm run dev`).
 
 Правила:
 
@@ -75,6 +76,7 @@ npm run build
 npm run dev       # dev-сервер: http://localhost:3000/newtab.html
 npm run build     # production-сборка в dist/
 npm run preview   # локальный просмотр сборки
+npm test          # тесты (vitest): логика раскладки и проверка sites.json
 npm run lint      # ESLint с автоисправлением
 npm run package   # сборка + архив new-tab-extension.zip для публикации
 ```
@@ -84,22 +86,27 @@ npm run package   # сборка + архив new-tab-extension.zip для пу�
 ## Структура проекта
 
 ```
+├── manifest.json         # манифест расширения (MV3); version подставляется из package.json при сборке
 ├── public/
-│   ├── manifest.json     # манифест расширения (MV3)
 │   ├── icons/            # иконки расширения 16/32/48/128
 │   ├── img/              # логотипы сайтов
 │   └── favicon.ico
 ├── src/
 │   ├── main.js           # точка входа
-│   ├── App.vue           # раскладка, группировка, темы, анимации
-│   ├── SiteItem.vue      # карточка сайта
-│   ├── GroupItem.vue     # карточка-папка и модальное окно
-│   └── data.json         # список сайтов
+│   ├── App.vue           # сетка верхнего уровня
+│   ├── components/
+│   │   ├── BaseCard.vue      # общая оболочка карточки
+│   │   ├── SiteCard.vue      # карточка сайта
+│   │   ├── FolderCard.vue    # карточка-папка
+│   │   └── FolderDialog.vue  # окно папки (нативный <dialog>)
+│   ├── lib/layout.js     # группировка сайтов в папки, превью папки
+│   ├── styles/theme.css  # CSS-переменные, светлая и тёмная темы
+│   └── data/sites.json   # список сайтов
 ├── store/                # материалы для Chrome Web Store
 ├── docs/DEVELOPMENT.md   # техническая документация
 ├── docs/DEPLOY.md        # деплой и релизы
 ├── newtab.html           # HTML-шаблон
-├── vite.config.js
+├── vite.config.js        # сборка, генерация manifest.json, настройки тестов
 └── .github/workflows/release.yml
 ```
 
@@ -109,4 +116,4 @@ npm run package   # сборка + архив new-tab-extension.zip для пу�
 
 ## Технологии
 
-Vue 3 (`<script setup>`), Vite, ESLint + Prettier.
+Vue 3 (`<script setup>`), Vite, Vitest, ESLint + Prettier.

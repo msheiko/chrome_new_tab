@@ -6,5 +6,6 @@
     "resolveJsonModule": true,
     "lib": ["esnext", "dom", "dom.iterable"]
   },
-  "include": ["src/**/*", "*.config.js"]
+  "include": ["src/**/*", "*.config.js"],
+  "exclude": ["dist", "node_modules"]
 }

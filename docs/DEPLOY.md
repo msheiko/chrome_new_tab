@@ -4,8 +4,8 @@
 
 ## Выпуск новой версии
 
-1. Проверьте, что `npm run lint` и `npm run build` проходят.
-2. Поднимите версию в **обоих** файлах: `package.json` и `public/manifest.json`.
+1. Проверьте, что `npm run lint`, `npm test` и `npm run build` проходят.
+2. Поднимите версию в `package.json` (например, `npm version patch --no-git-tag-version`). В `manifest.json` версию писать не нужно: она подставляется при сборке.
 3. Закоммитьте (`Bump version to X.Y.Z`).
 4. Создайте и отправьте тег:
    ```bash
@@ -16,10 +16,11 @@
 ## Что делает workflow
 
 1. `npm ci`;
-2. проверяет, что тег совпадает с версией в `public/manifest.json` (иначе падает);
-3. `npm run package` → `new-tab-extension.zip`;
-4. создаёт GitHub Release с архивом и автоматическими заметками;
-5. загружает архив в Chrome Web Store и публикует (`--auto-publish`).
+2. проверяет, что тег совпадает с версией в `package.json` (иначе падает);
+3. `npm run lint:check` и `npm test`;
+4. `npm run package` → `new-tab-extension.zip`;
+5. создаёт GitHub Release с архивом и автоматическими заметками;
+6. загружает архив в Chrome Web Store и публикует (`--auto-publish`).
 
 ## Секреты репозитория
 
@@ -44,15 +45,16 @@ npm run package
 
 ## Чек-лист перед релизом
 
-- `npm run lint` без ошибок;
+- `npm run lint` и `npm test` без ошибок;
 - `npm run build` проходит;
 - расширение из `dist/` загружено в Chrome: новая вкладка открывается, папки открываются и закрываются, логотипы видны в светлой и тёмной темах;
-- версии в `package.json` и `public/manifest.json` совпадают.
+- версия в `package.json` поднята и совпадает с тегом.
 
 ## Частые проблемы
 
 | Симптом | Причина и решение |
 |---------|-------------------|
-| Workflow упал на проверке тега | Версия в `public/manifest.json` не совпадает с тегом |
+| Workflow упал на проверке тега | Версия в `package.json` не совпадает с тегом |
+| Workflow упал на тестах | Ошибка в `src/data/sites.json`: нет файла логотипа, дубль `url` или пустое поле |
 | Падает шаг публикации в Web Store | Не заданы или устарели secrets `CWS_*`, либо в магазине уже есть версия с таким номером |
 | Тег отправлен, а workflow не запустился | Тег не начинается с `v` |
