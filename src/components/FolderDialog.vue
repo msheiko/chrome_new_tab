@@ -99,6 +99,10 @@ h2 {
   gap: 24px;
 }
 
+.sites :deep(.logo) {
+  background: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .dialog,
   .dialog::backdrop {
