@@ -22,7 +22,7 @@ defineProps({
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 0 0 6px;
+  padding: 12px 0;
   border: 0;
   border-radius: var(--card-radius);
   overflow: hidden;

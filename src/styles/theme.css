@@ -3,7 +3,7 @@
   --text-color: rgb(65, 65, 65);
   --card-bg: #ffffff;
   --icon-bg: #e4e7eb;
-  --card-radius: 5px;
+  --card-radius: 18px;
   --card-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   --card-shadow-hover:
     rgba(14, 30, 37, 0.2) 0px 4px 8px 0px, rgba(14, 30, 37, 0.4) 0px 4px 20px 0px;

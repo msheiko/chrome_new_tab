@@ -52,7 +52,6 @@ const preview = computed(() => folderPreview(props.sites));
   aspect-ratio: 1;
   box-sizing: border-box;
   padding: 4px;
-  border-radius: 8px;
   background: var(--icon-bg);
   object-fit: contain;
 }
