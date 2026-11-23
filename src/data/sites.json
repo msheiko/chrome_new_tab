@@ -1,5 +1,11 @@
 [
   {
+    "url": "https://chat.qwen.ai/",
+    "image": "/img/qwen.svg",
+    "title": "Qwen",
+    "group": "AI"
+  },
+  {
     "url": "https://claude.ai/",
     "image": "/img/claude.svg",
     "title": "Claude",
